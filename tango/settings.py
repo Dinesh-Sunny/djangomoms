@@ -31,6 +31,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.staticfiles',
+    'django.contrib.messages',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
     'rango',
 )
 
@@ -50,7 +56,7 @@ ROOT_URLCONF = 'tango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR + 'rango/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

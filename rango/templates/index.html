@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Moms</title>
+</head>
+<body>
+
+<h1>Social Feed</h1>
+
+<hr>
+
+{% for post in posts %}
+    <h3>{{post.summary}}</h3>
+    <div>{{post.description}}</div>
+    <h6>Likes: {{post.likes}}</h6>
+    <hr>
+{% endfor %}
+
+
+
+</body>
+</html>
